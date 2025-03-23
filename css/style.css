@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: linear-gradient(135deg, #ffcc80, #ffab40);
+    color: white;
+    padding: 60px 20px;
+    border-bottom: 5px solid #ff9800;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-content p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #ffa726;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background: #fb8c00;
+  }
+  
+  /* Seções Gerais */
+  section.content {
+    padding: 50px 20px;
+    border-bottom: 1px solid #eee;
+    background: #fffde7;
+  }
+  
+  section.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6f00;
+  }
+  
+  section.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Imagem do eBook */
+  .ebook-img {
+    width: 65%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px dashed #ff6f00;
+  }
+  
+  /* Lista de Benefícios */
+  .benefits {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .benefits li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Depoimentos */
+  blockquote {
+    font-style: italic;
+    background: #fff3e0;
+    border-left: 5px solid #ffb74d;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rodapé */
+  footer {
+    background: linear-gradient(135deg, #ffe082, #ffd54f);
+    color: #555;
+    padding: 50px 20px;
+  }
+  
+  footer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background: #ff7043;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #f4511e;
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+    section.content h2 {
+      font-size: 2rem;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .ebook-img {
+      max-width: 220px;
+    }
+  }
